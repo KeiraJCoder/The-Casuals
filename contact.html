@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>The Casuals - Contact Us</title>
+</head>
+
+<body>
+
+<!-- ================================================ -->
+<!-- =================== HEADER ================= -->
+<!-- ================================================ -->
+<header>
+  <div class="title">
+  <img src="images/Casuals-Logo.png" alt="Casuals Logo" class="logo left-logo">
+<h1>The Casuals</h1>
+<img src="images/Casuals-Logo.png" alt="Casuals Logo" class="logo right-logo flipped">
+</div>
+<nav>
+<ul>
+<li class="main-nav-item"><a href="index.html">Home</a></li>
+<li class="main-nav-item"><a href="about.html">About</a></li>
+<li class="main-nav-item active"><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+<br>
+<br>
+<nav>
+  <ul class="social-links">
+    <li><a href="https://www.facebook.com/thecasuals" target="_blank" title="Facebook"><img src="images/facebook.webp"
+          alt="Facebook"></a></li>
+  </ul>
+</nav>
+</header>
+
+<!-- ================================================ -->
+<!-- =================== CONTACT FORM ================= -->
+<!-- ================================================ -->
+
+
+<h2 class="h2">contact us</h2>
+<section class="container">
+    <form id="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message"></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-- ================================================ -->
+<!-- =================== FOOTER ================= -->
+<!-- ================================================ -->
+
+        <footer>
+              <p>© 2023 The Casuals. All rights reserved.</p>
+        </footer>
+        
+
+
+        <script>
+          document.getElementById('contact-form').addEventListener('submit', function(event) {
+              event.preventDefault(); // Prevents the form from submitting in the default manner
+              alert('Your message has been submitted!'); // Show a popup message
+          });
+          </script>
+  </body>
+</html>

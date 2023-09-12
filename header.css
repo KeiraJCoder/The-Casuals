@@ -1,0 +1,302 @@
+/* ===================================================
+SECTION 1: Font Styles
+=================================================== */
+/* Importing different fonts used in the webpage */
+/* Fonts */
+
+@font-face {
+  font-family: 'NeonRetroDemo';
+  src: url('fonts/NeonRetroDemoVersionRegular-rgPdx.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'ZeroesOne';
+  src: url('fonts/Zeroes One.otf') format('opentype');
+}
+
+/* header.css */
+
+header {
+    background-image: url(images/The-casuals.jpeg);
+    background-size: 100%;
+    background-position: 2.8%;
+    color: #fff;
+    padding: 25px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-family: 'NeonRetroDemo', sans-serif;
+    font-size: 8vw;
+    color: rgb(255, 3, 247);
+    text-shadow: #000000 3px 1px;
+    margin: 10px;
+  }
+  
+  .logo {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+    background-color:black;
+  }
+  
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  nav {
+    display: inline-flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-family: 'NeonRetroDemo', sans-serif;
+    background-color: black;
+    margin-top: 0;
+  }
+  
+  nav a:hover {
+    color: rgb(255, 0, 212);
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .main-nav-item a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2vw;
+    padding: 1vw;
+  }
+  
+  .main-nav-item a:hover {
+    background-color: #000000;
+  }
+  
+  .social-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .social-links li {
+    margin-left: 10px;
+  }
+  
+  .social-links li a img {
+    height: 30px;
+    width: 30px;
+  }
+  
+  .social-links li a:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+
+
+/* Apply styling for the active page */
+.main-nav-item.active a {
+  background-color: rgb(0, 0, 0);
+  color: #f7ff03;
+  border:rgb(0, 0, 0);
+  border-style:double;
+}
+  
+
+/* ===================================================
+SECTION 11: Media Queries
+================================================== */
+
+/* Tablets and Desktops */
+@media (max-width: 768px) {
+    /* Responsive styles for tablets and desktops */
+    
+    /* Container styles */
+    .container {
+      padding: 10px;
+    }
+  
+    /* Social Feed styles */
+    #social-feed {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    /* Social Wrapper styles */
+    .social-wrapper {
+      flex-direction: column;
+    }
+  
+    /* Social Item styles */
+    .social-item {
+      min-width: 100%;
+    }
+  
+    /* Main Navigation Item styles */
+    .main-nav-item a {
+      font-size: 22px; /* Increase this value to adjust the size */
+    }
+  
+    /* Header styles */
+    header {
+      padding: 10px;
+    }
+  
+    /* Header H1 styles */
+    h1 {
+      font-size: 8vw;
+    }
+  
+    /* Header H2 and .h2 styles */
+    h2,
+    .h2 {
+      font-size: 4vw;
+    }
+  
+    /* .h22 and .h3 styles */
+    .h22,
+    .h3 {
+      font-size: 4vw;
+    }
+  
+    /* Episodes List styles */
+    #episodes li {
+      padding: 22px;
+      margin: 5px;
+      max-width: 100%;
+    }
+  
+    /* Footer styles */
+    footer {
+      padding: 10px;
+    }
+  }
+  
+  /* Mobile Devices */
+  @media (max-width: 600px) {
+    /* Responsive styles for mobile devices */
+    
+    /* H1 styles */
+    h1 {
+      font-size: 7vw;
+    }
+  
+    /* About .h2 styles */
+    #about .h2 {
+      font-size: 8vw; /* Updated font size value for mobile devices */
+    }
+  
+    /* Main Navigation Item styles */
+    .main-nav-item a {
+      font-size: 2.02vh; /* Increase this value to adjust the size */
+    }
+  
+    /* H2 and .h2 styles */
+    h2,
+    .h2 {
+      font-size: 5vw;
+    }
+  
+    /* .h22 and .h3 styles */
+    .h22,
+    .h3 {
+      font-size: 4vw;
+    }
+  
+    /* Episodes List styles */
+    #episodes li {
+      flex: 0 1 100%;
+    }
+  }
+  
+  /* Small Tablets */
+  @media (max-width: 768px) {
+    /* Responsive styles for small tablets */
+    
+    /* Header styles */
+    header {
+      padding: 10px;
+    }
+  
+    /* Header H1 styles */
+    h1 {
+      font-size: 5vw;
+    }
+  
+    /* Logo styles */
+    .logo {
+      width: 80px;
+    }
+  }
+  
+  /* Mobile Phones */
+  @media (max-width: 480px) {
+    /* Responsive styles for mobile phones */
+    
+    /* Container styles */
+    .container {
+      padding: 10px;
+    }
+  
+    /* Header H1 styles */
+    header h1 {
+      font-size: 5vw;
+    }
+  
+    /* Header H2 styles */
+    header h2 {
+      font-size: 3vw;
+    }
+  
+    /* Main Navigation Item styles */
+    .main-nav-item a {
+      font-size: 18px;
+      padding: 0.5vh;
+    }
+  
+    /* About .h2 styles */
+    #about .h2 {
+      font-size: 6vw;
+    }
+  
+    /* Episodes List styles */
+    #episodes li {
+      max-width: 100%;
+    }
+  }
+  
+  /* Smallest Mobile Phones */
+  @media (max-width: 320px) {
+    /* Responsive styles for smallest mobile phones */
+    
+    /* Header H1 styles */
+    header h1 {
+      font-size: 4vw;
+    }
+  
+    /* Header H2 styles */
+    header h2 {
+      font-size: 2.5vw;
+    }
+  
+    /* Main Navigation Item styles */
+    .main-nav-item a {
+      font-size: 16px;
+      padding: 0.3vh;
+    }
+  
+    /* About .h2 styles */
+    #about .h2 {
+      font-size: 5vw;
+    }
+  }
+  
